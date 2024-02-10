@@ -1,7 +1,13 @@
 v 4
-file . "FA_tb.vhd" "729ec306f4791a1e326171ed20a9e2dc5993e558" "20240210084706.012":
-  entity fa_tb at 2( 2) + 0 on 13;
-  architecture behavior of fa_tb at 10( 87) + 0 on 14;
-file . "Full_Adder.vhd" "b4dce53ab8f0c0b8690f27bda6cd8b5934448026" "20240210084706.002":
-  entity full_adder at 2( 2) + 0 on 11;
-  architecture behavioral of full_adder at 14( 255) + 0 on 12;
+file . "half_adder.vhdl" "e8959727d9aa8677f0429e43421ee62fea85a080" "20240210180546.862":
+  entity half_adder at 1( 0) + 0 on 17;
+  architecture behavior of half_adder at 19( 190) + 0 on 18;
+file . "or_gate.vhdl" "2c331432040eeebd070b4f333dfb1f49e649e3a6" "20240210180546.845":
+  entity or_gate at 1( 0) + 0 on 13;
+  architecture behavior of or_gate at 18( 156) + 0 on 14;
+file . "full_adder.vhdl" "a6f7af5af7466e393fdf90b475bdadfcae789edd" "20240210180546.835":
+  entity full_adder at 1( 0) + 0 on 11;
+  architecture behavior of full_adder at 19( 194) + 0 on 12;
+file . "full_adder_tb.vhdl" "8d0c1f66d7a59d6a57e1d02b51272ce8588eef44" "20240210180546.854":
+  entity full_adder_tb at 1( 0) + 0 on 15;
+  architecture test of full_adder_tb at 11( 102) + 0 on 16;

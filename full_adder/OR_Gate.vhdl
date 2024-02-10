@@ -1,19 +1,24 @@
-
 library IEEE;
+
 use IEEE.STD_LOGIC_1164.ALL;
 
+entity or_gate is
+
+    port (
+
+        a, b : in std_logic;
+
+        y : out std_logic
+
+    );
+
+end or_gate;
 
 
-entity OR_GATE is
-    Port ( A : in  STD_LOGIC;
-           B : in  STD_LOGIC;
-           Y : out  STD_LOGIC);
-end OR_GATE;
-
-architecture Behavioral of OR_GATE is
+architecture behavior of or_gate is
 
 begin
 
-Y<=A or B;
+    y <= a or b;
 
-end Behavioral;
+end behavior;
