@@ -1,0 +1,7 @@
+v 4
+file . "FA_tb.vhd" "729ec306f4791a1e326171ed20a9e2dc5993e558" "20240210084706.012":
+  entity fa_tb at 2( 2) + 0 on 13;
+  architecture behavior of fa_tb at 10( 87) + 0 on 14;
+file . "Full_Adder.vhd" "b4dce53ab8f0c0b8690f27bda6cd8b5934448026" "20240210084706.002":
+  entity full_adder at 2( 2) + 0 on 11;
+  architecture behavioral of full_adder at 14( 255) + 0 on 12;
