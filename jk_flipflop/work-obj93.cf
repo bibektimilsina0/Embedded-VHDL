@@ -1,0 +1,7 @@
+v 4
+file . "JK_TB.vhdl" "758f07c73a4453859aad0bc675baf22b287a9e2d" "20240209183936.448":
+  entity jk_tb at 2( 1) + 0 on 13;
+  architecture behavior of jk_tb at 8( 75) + 0 on 14;
+file . "JK_Flipflop.vhdl" "273a441faa518b45c5107093beb13afc65e9b898" "20240209183936.435":
+  entity jk_flip_flop at 2( 1) + 0 on 11;
+  architecture behavioral of jk_flip_flop at 15( 245) + 0 on 12;

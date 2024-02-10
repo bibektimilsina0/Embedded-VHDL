@@ -1,0 +1,10 @@
+all: result.vcd
+
+result.vcd:JK_Flipflop.vhdl JK_TB.vhdl
+    ghdl -a JK_Flipflop.vhdl
+    ghdl -a JK_TB.vhdl
+    ghdl -e JK_TB
+    ghdl -r JK_TB --vcd=result.vcd --stop-time=10us
+
+clean:
+    rm -rf result.vcd

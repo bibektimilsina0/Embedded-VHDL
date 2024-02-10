@@ -1,0 +1,10 @@
+all: result.vcd
+
+result.vcd:Decoder.vhdl Decoder_TB.vhdl
+    ghdl -a Decoder.vhdl
+    ghdl -a Decoder_TB.vhdl
+    ghdl -e Decoder_TB
+    ghdl -r Decoder_TB --vcd=result.vcd --stop-time=10us
+
+clean:
+    rm -rf result.vcd
