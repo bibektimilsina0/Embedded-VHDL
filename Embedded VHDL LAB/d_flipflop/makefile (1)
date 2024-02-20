@@ -1,0 +1,23 @@
+# VHDL files
+SRC_FILES := d_flip_flop.vhdl tb_d_flip_flop.vhdl
+
+# Main target
+all: compile simulate
+
+# Compile VHDL files
+compile:
+	ghdl -a  $(SRC_FILES)
+
+# Simulate the design and generate VCD file
+simulate:
+	ghdl -e  tb_d_flip_flop
+	ghdl -r  tb_d_flip_flop --vcd=result.vcd --stop-time=20us
+
+# Clean up temporary files
+clean:
+	rm -f *.o *.cf result.vcd work-obj93.cf
+
+# Remove all generated files
+distclean: clean
+	rm -f tb_d_flip_flop
+

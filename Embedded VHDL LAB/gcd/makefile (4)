@@ -1,0 +1,23 @@
+# VHDL files
+SRC_FILES := gcd.vhdl gcd_tb.vhdl
+
+# Main target
+all: compile simulate
+
+# Compile VHDL files
+compile:
+	ghdl -a  $(SRC_FILES)
+
+# Simulate the design and generate VCD file
+simulate:
+	ghdl -e  fsmgcd_tb
+	ghdl -r  fsmgcd_tb --vcd=result.vcd --stop-time=20us
+
+# Clean up temporary files
+clean:
+	rm -f *.o *.cf result.vcd work-obj93.cf
+
+# Remove all generated files
+distclean: clean
+	rm -f fsmgcd_tb
+
