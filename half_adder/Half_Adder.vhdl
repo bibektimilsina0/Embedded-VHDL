@@ -9,12 +9,9 @@ entity Half_Adder is
            C : out  STD_LOGIC);
 end Half_Adder;
 
-architecture Behavioral of Half_Adder is
-
+architecture DataFlow of Half_Adder is
 begin
-
-S<=A XOR B;
-C<=A and B;
-
-
-end Behavioral;
+    -- Data flow implementation of AND and XOR
+    S <= A xor B;
+    C <= A and B;
+end architecture DataFlow;

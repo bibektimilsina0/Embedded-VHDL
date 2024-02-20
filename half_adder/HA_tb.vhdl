@@ -9,7 +9,7 @@ USE ieee.std_logic_1164.ALL;
 ENTITY HA_tb IS
 END HA_tb;
  
-ARCHITECTURE behavior OF HA_tb IS 
+ARCHITECTURE DataFlow OF HA_tb IS 
  
     -- Component Declaration for the Unit Under Test (UUT)
  
